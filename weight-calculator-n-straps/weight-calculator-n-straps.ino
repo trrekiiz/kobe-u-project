@@ -46,15 +46,17 @@ void loop(void) {
     }
 
     if(fsrReading < 10 && fsrReading1 < 10){
-       Serial.println("Both straps are not active");
-      }
+      Serial.println("Both straps are not active");
+    }
     if(fsrReading < 10 && fsrReading1 > 10){
-       Serial.println("Left straps dont use");
-      }  
+      Serial.println("Left straps dont use");
+    }  
     if(fsrReading > 10 && fsrReading1 < 10){
-       Serial.println("Right straps dont use");
-      }  
-    delay(2000);
+      Serial.println("Right straps dont use");
+    }  
+
+    Serial.println("================================");
+    delay(5000);
 } 
 
 
