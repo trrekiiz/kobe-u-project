@@ -37,7 +37,7 @@ void loop(void) {
     } 
     else if (fsrReading1 < 500) {
       Serial.println(" - Light squeeze weight");
-    } 
+    }  
     else if (fsrReading1 < 800) {
       Serial.println(" - Medium squeeze weight");
     } 
